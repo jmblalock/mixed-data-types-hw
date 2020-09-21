@@ -262,3 +262,17 @@ for (const i in bondFilms) {
 }
 
 console.log(oddBonds);
+
+// 7.
+let bondGross = [];
+for (const i in bondFilms) {
+    bondGross.push(bondFilms[i]["gross"].replace('$',''));
+}
+
+let cumulativeGross = 0;
+
+for (const i in bondGross) {
+    cumulativeGross += parseInt(bondGross[i].replace(',',''));
+}
+
+console.log('$' + cumulativeGross);
