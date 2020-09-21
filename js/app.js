@@ -40,7 +40,7 @@ then give a small example of the **data structure**:
         laserBlasters: 2,
         tractorBeam: false,
         warpDrive: true,
-    };
+    }
 
 // => Array that contains Strings
     const arrayOfStrings = ['student one', 'student two', 'student three'];
@@ -55,7 +55,7 @@ then give a small example of the **data structure**:
             name: 'student two',
             location: 'SEA'
         },
-    ];
+    ]
 
 // => Array of Objects with Strings and nested Array of Strings
     const arrayOfThings = [
@@ -73,7 +73,7 @@ then give a small example of the **data structure**:
                         "the last dance",
                         "stranger things"],
         },
-    ];
+    ]
 
 /*
 ### 2. Take it Easy
@@ -96,7 +96,7 @@ rainbowArray = [
     'blue',
     'indigo',
     'violet'
-];
+]
 
 // 2.
 const blue = rainbowArray[4];
@@ -113,3 +113,61 @@ const justin = {
 // 4.
 const jHobby = justin.hobby;
 console.log(jHobby);
+
+/*
+### 3. Crazy Object!
+Use crazyObject to log the following.
+
+  * "omg my mouth is burning"
+  * "Pretty pretty prettayyyyy good"
+  * "Swearing at Larry and Jeff"
+  * "Chicken Teriyaki Boyyyyyy"
+  * The object the contains the name `funkhauser`
+*/
+
+const crazyObject = {
+  taco: [
+    {
+      meat: 'steak',
+      cheese: ['panela', 'queso', 'chihuahua']
+    },
+    {
+      meat: 'chicken',
+      salsa: ["pico", "hot", "hotter", "really hot", "really really hot", "omg my mouth is burning"]
+    },
+  ],
+  larry: {
+    nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
+    quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's thing?", "women love a self confident bald man", "I'm a walking talking enigma"],
+    characters: [
+      {
+        name: "Jeff",
+        occupation: "manager"
+      },
+      {
+        name: "funkhauser",
+        occupation: "tv dude"
+      },
+      {
+        name: "susie",
+        occupation: "jeffs wife",
+        favourtieHobby: "Swearing at Larry and Jeff"
+      },
+    ]
+  }
+}
+
+// 1.
+console.log(crazyObject.taco[1].salsa[5]);
+
+// 2.
+console.log(crazyObject.larry.quotes[0]);
+
+// 3. 
+console.log(crazyObject.larry.characters[2].favourtieHobby);
+
+// 4.
+console.log(crazyObject.larry.nicknames[1]);
+
+// 5.
+console.log(crazyObject.larry.characters[1]);
