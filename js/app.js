@@ -74,3 +74,42 @@ then give a small example of the **data structure**:
                         "stranger things"],
         },
     ];
+
+/*
+### 2. Take it Easy
+
+1.  Make an array that holds all of the colors of the rainbow.
+2.  Write code that will access "blue" from the rainbow array.
+3.  Make an object that is called your name and holds the information about 
+    your favorite food, a hobby, the name of the town that you live in 
+    currently, and your favorite datatype.
+4.  Write code that will access your hobby from the object that you just 
+    created.
+*/
+
+// 1.
+rainbowArray = [
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'blue',
+    'indigo',
+    'violet'
+];
+
+// 2.
+const blue = rainbowArray[4];
+console.log(blue);
+
+// 3.
+const justin = {
+    favoriteFood: 'bbq',
+    hobby: 'snowboarding',
+    town: 'austin',
+    favoriteDataType: 'number'
+}
+
+// 4.
+const jHobby = justin.hobby;
+console.log(jHobby);
